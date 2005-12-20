@@ -1,0 +1,28 @@
+NAME
+    UNIVERSAL::clone - add clone method to all classes and objects
+
+SYNOPSIS
+     use UNIVERSAL::clone;
+
+     $a = new Foo;
+     $b = $a->clone();
+
+     # or
+
+     use UNIVERSAL::clone qw(Storable);    # use Storable::dclone
+     use UNIVERSAL::clone qw(Clone);    # use Clone::clone (default)
+
+DESCRIPTION
+    Loading the UNIVERSAL::clone module adds clone method to all classes and
+    methods. You can get a 'complete' copy of an object. See Storable or
+    Clone perldoc for more details.
+
+    Internally it just calls Clone::clone by default, but you can use
+    standard (but slower) Storable module instead.
+
+SEE ALSO
+    Storable, Clone
+
+AUTHOR
+    Okamoto RYO <ryo@aquahill.net>
+

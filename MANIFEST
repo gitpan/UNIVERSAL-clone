@@ -1,0 +1,9 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+clone.pm
+t/01_basic.t
+t/02_storable.t
+t/03_clone.t
+META.yml                                 Module meta-data (added by MakeMaker)
